@@ -1,4 +1,4 @@
-<?php include 'lang.php'; ?>
+<?php include 'config.php'; ?>
 <!DOCTYPE HTML>
 <!--
 	Overflow by HTML5 UP
@@ -30,25 +30,28 @@
 		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>This is Overflow</h2>
+					<h2><?php echo $lang["SECTION_NAME"];?></h2>
 				</header>
-				<p>A brand new site template designed by <a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>.<br />
-				It’s fully responsive, built on <strong>skel</strong>, and of course entirely free<br />
-				under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
+				<p><?php echo $lang["SECTION_TEXT"];?></p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
+					<a href="#first" class="button style2 scrolly"><?php echo $lang["SECTION_LINK"];?></a>
 				</footer>
 			</section>
+
+
+
+		<!-- faire un for avec 1 element sur 2 -->
+
+
 
 		<!-- Feature 1 -->
 			<article id="first" class="container box style1 right">
 				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>Lorem ipsum<br />
-						dolor sit amet</h2>
+						<h2><?php echo $lang["BLOC_NAME"];?></h2>
 					</header>
-					<p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
+					<p><?php echo $lang["BLOC_TEXT"];?></p>
 				</div>
 			</article>
 
@@ -57,19 +60,27 @@
 				<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>Mollis posuere<br />
-						lectus lacus</h2>
+						<h2><?php echo $lang["BLOC_NAME"];?></h2>
 					</header>
-					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
+					<p><?php echo $lang["BLOC_TEXT"];?></p>
 				</div>
 			</article>
+
+
+
+
+
+
+
+
+
+
 
 		<!-- Portfolio -->
 			<article class="container box style2">
 				<header>
-					<h2>Magnis parturient</h2>
-					<p>Justo phasellus et aenean dignissim<br />
-					placerat cubilia purus lectus.</p>
+					<h2><?php echo $lang["GALLERY_NAME"];?></h2>
+					<p><?php echo $lang["GALLERY_TEXT"];?></p>
 				</header>
 				<div class="inner gallery">
 					<div class="row 0%">
@@ -100,19 +111,19 @@
 		<!-- Contact -->
 			<article class="container box style3">
 				<header>
-					<h2>Nisl sed ultricies</h2>
-					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
+					<h2><?php echo $lang["TITLE_FORM"];?></h2>
+					<p><?php echo $lang["SUBTITLE_FORM"];?></p>
 				</header>
 				<form method="post" action="#">
 					<div class="row 50%">
-						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="<?php echo $lang["NAME"];?>" /></div>
+						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="<?php echo $lang["EMAIL"];?>" /></div>
 						<div class="12u$">
-							<textarea name="message" placeholder="Message"></textarea>
+							<textarea name="message" placeholder="<?php echo $lang["MESSAGE"];?>"></textarea>
 						</div>
 						<div class="12u$">
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" value="<?php echo $lang["SEND"];?>" /></li>
 							</ul>
 						</div>
 					</div>
@@ -287,7 +298,7 @@
 			</ul>
 			<div class="copyright">
 				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li><?php echo $lang["FOOTER"];?></li>
 				</ul>
 			</div>
 		</section>
