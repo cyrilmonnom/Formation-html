@@ -1,3 +1,4 @@
+<?php include 'lang.php'; ?>
 <!DOCTYPE HTML>
 	<?php echo 'tste'; ?>
 <!--
@@ -19,11 +20,11 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<h1>Overflow</h1>
-					<p>By HTML5 UP</p>
+					<h1><?php echo $lang["TITLE"];?></h1>
+					<p><?php echo $lang["SUBTITLE"];?></p>
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>
+					<a href="#banner" class="button style2 scrolly-middle"><?php echo $lang["SCREEN_ONE"];?></a>
 				</footer>
 			</section>
 
@@ -73,17 +74,27 @@
 				</header>
 				<div class="inner gallery">
 					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
-					</div>
+
+						<?php for ($i=1; $i < 5; $i++){?>
+
+							<div class="3u 12u(mobile)"><a href="images/fulls/0<?php echo $i; ?>.jpg" class="image fit"><img src="images/thumbs/0<?php echo $i; ?>.jpg" alt="" title="Ad infinitum" /></a></div>
+
+						<?php } ?>
+
+
+						</div>
 					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" alt="" title="Different." /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
-					</div>
+
+
+
+						<?php for ($i=5; $i < 9; $i++){?>
+
+							<div class="3u 12u(mobile)"><a href="images/fulls/0<?php echo $i; ?>.jpg" class="image fit"><img src="images/thumbs/0<?php echo $i; ?>.jpg" alt="" title="Ad infinitum" /></a></div>
+
+						<?php } ?>
+
+
+													</div>
 				</div>
 			</article>
 
