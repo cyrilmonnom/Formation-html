@@ -11,4 +11,12 @@
 
 
 // fichier de lang
-include 'lang.php';
+
+$selectlang = 0;
+
+
+if ($selectlang == 1):
+include 'lang/lang-fr.php';
+else :
+    include 'lang/lang-en.php';
+    endif;

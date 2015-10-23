@@ -1,4 +1,4 @@
-<?php include 'config.php'; ?>
+<?php include 'composer/config.php'; ?>
 <!DOCTYPE HTML>
 <!--
 	Overflow by HTML5 UP
@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body class="<?php echo $lang["LANG"];?>">
 
 		<!-- Header -->
 			<section id="header">
