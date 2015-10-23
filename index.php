@@ -1,6 +1,5 @@
 <?php include 'lang.php'; ?>
 <!DOCTYPE HTML>
-	<?php echo 'tste'; ?>
 <!--
 	Overflow by HTML5 UP
 	html5up.net | @n33co
@@ -8,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Overflow by HTML5 UP</title>
+		<title><?php echo $lang["PROJECT_NAME"];?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
