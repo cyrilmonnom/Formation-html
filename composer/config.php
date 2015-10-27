@@ -7,7 +7,27 @@
  */
 
 // connexion a la BDD
+include 'connexion.php';
+/**
+ * Utilisation de la classe
+ */
+try
+{
+    $Mysql = new Mysql('localhost', 'formation', 'root', 'root');
+}
+catch (MySQLExeption $e)
+{
+    echo $e -> RetourneErreur();
+}
 
+
+
+$Resulats = $Mysql->TabResSQL('SELECT * FROM roles');
+foreach ($Resulats as $value)
+{
+    echo $value['id'];
+    echo $value['statut'];
+}
 
 
 // fichier de lang
